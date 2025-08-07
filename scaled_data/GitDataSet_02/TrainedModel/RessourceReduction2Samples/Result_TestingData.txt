@@ -1,0 +1,15 @@
+Label1: /87 = %
+Label2: /87 = %
+Label3: /87 = %
+Label4: /87 = %
+Label0: /87 = %
+All Labels = /215  = %
+
+Confusion Matrix:
+
+  0  1  2  3  4 
+0 87 0  0  0  0
+1 0  86 0  0  1
+2 0  0  87 0  0
+3 0  0  1  80 6
+4 0  0  17 30 40
