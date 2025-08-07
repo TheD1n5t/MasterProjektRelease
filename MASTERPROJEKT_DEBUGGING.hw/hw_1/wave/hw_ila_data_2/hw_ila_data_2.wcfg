@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="1,874"></ZoomEndTime>
+      <Cursor1Time time="159"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_accelerator_state_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_accelerator_state_dbg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_accelerator_state_dbg[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_bundled_result_acc_ila_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_bundled_result_acc_ila_dbg[255:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_bundled_result_acc_ila_dbg[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_bundled_result_ila_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_bundled_result_ila_dbg[255:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_bundled_result_ila_dbg[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_chunk_counter_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_chunk_counter_dbg[9:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_chunk_counter_dbg[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_chunk_counter_internal_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_chunk_counter_internal_dbg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_chunk_counter_internal_dbg[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_cm_addr_mux_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_cm_addr_mux_dbg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_cm_addr_mux_dbg[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_cm_data_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_cm_data_dbg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_cm_data_dbg[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_feature_index_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_feature_index_dbg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_feature_index_dbg[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_feature_valid_prev_dbg" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_feature_valid_prev_dbg</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_feature_valid_prev_dbg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_feature_valid_pulse_dbg" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_feature_valid_pulse_dbg</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_feature_valid_pulse_dbg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_feature_valid_reg_dbg" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_feature_valid_reg_dbg</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_feature_valid_reg_dbg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_feature_values_packed_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_feature_values_packed_dbg[511:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_feature_values_packed_dbg[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_im_addr_mux_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_im_addr_mux_dbg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_im_addr_mux_dbg[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_im_data_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_im_data_dbg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_im_data_dbg[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_level_index_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_level_index_dbg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_level_index_dbg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_majority_chunk_dbg_0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_majority_chunk_dbg_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_majority_chunk_dbg_0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_majority_chunk_dbg_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_majority_chunk_dbg_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_majority_chunk_dbg_1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_memory_index_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_memory_index_dbg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_memory_index_dbg[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_min_hamming_distance_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_min_hamming_distance_dbg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_min_hamming_distance_dbg[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HDC_Controller_AXI_W_0_similarity_counter_dbg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HDC_Controller_AXI_W_0_similarity_counter_dbg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HDC_Controller_AXI_W_0_similarity_counter_dbg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

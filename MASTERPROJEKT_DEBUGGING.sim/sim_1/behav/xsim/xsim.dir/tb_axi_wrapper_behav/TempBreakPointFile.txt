@@ -1,0 +1,6 @@
+Breakpoint File Version 1.0
+150,true,"D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd"
+157,true,"D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd"
+151,true,"D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd"
+152,true,"D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd"
+161,true,"D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd"

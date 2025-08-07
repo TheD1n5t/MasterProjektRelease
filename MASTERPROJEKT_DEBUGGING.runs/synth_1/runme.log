@@ -1,0 +1,52 @@
+
+*** Running vivado
+    with args -log HDC_Controller_AXI_Wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDC_Controller_AXI_Wrapper.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Jul 18 19:48:18 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source HDC_Controller_AXI_Wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 531.262 ; gain = 201.383
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Documents/FAU/VITISDEBUGGING'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top HDC_Controller_AXI_Wrapper -part xczu3eg-sbva484-1-i -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33312
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 996.188 ; gain = 444.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HDC_Controller_AXI_Wrapper' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/HDC_Controller_AXI_Wrapper.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'HDC_Controller' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/HDC_Controller.vhd:49]
+	Parameter D bound to: 10000 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Accelerator' declared at 'D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/Accelerator.vhd:5' bound to instance 'accelerator_unit' of component 'Accelerator' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/HDC_Controller.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'Accelerator' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/Accelerator.vhd:42]
+	Parameter D bound to: 10000 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'IdentityMemory' declared at 'D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/IdentityMemory.vhd:5' bound to instance 'IM' of component 'IdentityMemory' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/Accelerator.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'IdentityMemory' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/IdentityMemory.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'IdentityMemory' (0#1) [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/IdentityMemory.vhd:15]
+INFO: [Synth 8-3491] module 'ContinousMemory' declared at 'D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/ContinuousMemory.vhd:5' bound to instance 'CIM' of component 'ContinousMemory' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/Accelerator.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'ContinousMemory' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/ContinuousMemory.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ContinousMemory' (0#1) [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/ContinuousMemory.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Accelerator' (0#1) [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/Accelerator.vhd:42]
+INFO: [Synth 8-3491] module 'AssociativeMemory' declared at 'D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/AssociativeMemory.vhd:5' bound to instance 'associative_memory_unit' of component 'AssociativeMemory' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/HDC_Controller.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'AssociativeMemory' [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/AssociativeMemory.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'AssociativeMemory' (0#1) [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/AssociativeMemory.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'HDC_Controller' (0#1) [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/HDC_Controller.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'HDC_Controller_AXI_Wrapper' (0#1) [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/HDC_Controller_AXI_Wrapper.vhd:59]
+WARNING: [Synth 8-6014] Unused sequential element addr_reg_reg was removed.  [D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/IdentityMemory.vhd:41]

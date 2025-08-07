@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+Stopped at time : 85 ns : File "D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd" Line 150
+Stopped at time : 85 ns : File "D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd" Line 151
+Stopped at time : 95 ns : File "D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd" Line 152
+Stopped at time : 95 ns : File "D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd" Line 157
+Note: AXI READ @ 0 = 00001234
+Time: 95 ns  Iteration: 1  Process: /tb_axi_wrapper/stim_proc  File: D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd
+Stopped at time : 95 ns : File "D:/Documents/FAU/MASTERPROJEKT_DEBUGGING/MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd" Line 161

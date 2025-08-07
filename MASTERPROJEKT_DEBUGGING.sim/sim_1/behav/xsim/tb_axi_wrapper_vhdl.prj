@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/Accelerator.vhd" \
+"../../../../MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/AssociativeMemory.vhd" \
+"../../../../MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/ContinuousMemory.vhd" \
+"../../../../MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/HDC_Controller.vhd" \
+"../../../../MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/HDC_Controller_AXI_Wrapper.vhd" \
+"../../../../MASTERPROJEKT_DEBUGGING.srcs/sources_1/new/IdentityMemory.vhd" \
+"../../../../MASTERPROJEKT_DEBUGGING.srcs/sim_1/new/tb_axi_wrapper.vhd" \
+
+# Do not sort compile order
+nosort
