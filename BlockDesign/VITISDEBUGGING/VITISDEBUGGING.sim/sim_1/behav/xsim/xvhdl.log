@@ -1,0 +1,18 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/Accelerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Accelerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/AssociativeMemory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AssociativeMemory'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/ContinuousMemory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ContinousMemory'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/counter_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/HDC_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'HDC_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/IdentityMemory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IdentityMemory'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/HDC_Controller_AXI_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'HDC_Controller_AXI_Wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ip/design_1_HDC_Controller_AXI_W_0_0/sim/design_1_HDC_Controller_AXI_W_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_HDC_Controller_AXI_W_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.ip_user_files/bd/design_1/ip/design_1_rst_ps8_0_99M_0/sim/design_1_rst_ps8_0_99M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_ps8_0_99M_0'

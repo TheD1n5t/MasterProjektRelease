@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../VITISDEBUGGING.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../VITISDEBUGGING.gen/sources_1/bd/design_1/ipshared/a317/hdl" --include "../../../../VITISDEBUGGING.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/sim/design_1_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ip/design_1_ila_0_0/sim/design_1_ila_0_0.v" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../VITISDEBUGGING.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

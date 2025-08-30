@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/c65e/src/Accelerator.vhd" \
+"../../../bd/design_1/ipshared/c65e/src/AssociativeMemory.vhd" \
+"../../../bd/design_1/ipshared/c65e/src/ContinuousMemory.vhd" \
+"../../../bd/design_1/ipshared/c65e/src/counter_ram.vhd" \
+"../../../bd/design_1/ipshared/c65e/src/HDC_Controller.vhd" \
+"../../../bd/design_1/ipshared/c65e/src/IdentityMemory.vhd" \
+"../../../bd/design_1/ipshared/c65e/src/HDC_Controller_AXI_Wrapper.vhd" \
+"../../../bd/design_1/ip/design_1_HDC_Controller_AXI_W_0_0/sim/design_1_HDC_Controller_AXI_W_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps8_0_99M_0/sim/design_1_rst_ps8_0_99M_0.vhd" \
+
+# Do not sort compile order
+nosort

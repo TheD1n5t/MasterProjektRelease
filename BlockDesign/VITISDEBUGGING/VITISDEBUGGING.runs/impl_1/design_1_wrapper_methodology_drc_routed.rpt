@@ -1,0 +1,150 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sat Aug 30 21:47:05 2025
+| Host         : DESKTOP-U0V267S running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xczu3eg-sbva484-1-i
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 23
++--------+----------+---------------------------+------------+
+| Rule   | Severity | Description               | Violations |
++--------+----------+---------------------------+------------+
+| DPIR-2 | Warning  | Asynchronous driver check | 23         |
++--------+----------+---------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-2#1 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#2 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#3 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#4 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#5 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#6 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#7 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#8 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#9 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#10 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#11 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#12 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#13 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#14 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#15 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#16 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#17 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#18 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#19 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#20 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#21 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#22 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#23 Warning
+Asynchronous driver check  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input pin design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+

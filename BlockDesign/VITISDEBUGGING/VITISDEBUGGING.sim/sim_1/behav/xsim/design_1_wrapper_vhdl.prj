@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/Accelerator.vhd" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/AssociativeMemory.vhd" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/ContinuousMemory.vhd" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/counter_ram.vhd" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/HDC_Controller.vhd" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/IdentityMemory.vhd" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ipshared/e8d8/src/HDC_Controller_AXI_Wrapper.vhd" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ip/design_1_HDC_Controller_AXI_W_0_0/sim/design_1_HDC_Controller_AXI_W_0_0.vhd" \
+"../../../../VITISDEBUGGING.ip_user_files/bd/design_1/ip/design_1_rst_ps8_0_99M_0/sim/design_1_rst_ps8_0_99M_0.vhd" \
+
+# Do not sort compile order
+nosort

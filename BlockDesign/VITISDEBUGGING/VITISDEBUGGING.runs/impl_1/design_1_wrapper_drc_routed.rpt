@@ -1,0 +1,118 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sat Aug 30 21:46:35 2025
+| Host         : DESKTOP-U0V267S running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xczu3eg-sbva484-1-i
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 16
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPIP-2 | Warning  | Input pipelining       | 7          |
+| DPOP-3 | Warning  | PREG Output pipelining | 5          |
+| DPOP-4 | Warning  | MREG Output pipelining | 4          |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 input design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux3 input design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 input design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_base0 input design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_base0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#7 Warning
+Input pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_cur0 input design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_cur0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 output design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#2 Warning
+PREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux3 output design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#3 Warning
+PREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 output design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#4 Warning
+PREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_base0 output design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_base0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#5 Warning
+PREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_cur0 output design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_cur0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0 multiplier stage design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux3 multiplier stage design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/cm_addr_mux3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0 multiplier stage design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/accelerator_unit/im_addr_mux0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_base0 multiplier stage design_1_i/HDC_Controller_AXI_W_0/U0/hdc_unit/am_waddr_base0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+
