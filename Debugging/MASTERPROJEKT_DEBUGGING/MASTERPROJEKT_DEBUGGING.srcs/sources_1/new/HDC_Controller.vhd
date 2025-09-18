@@ -180,8 +180,6 @@ architecture Behavioral of HDC_Controller is
         -- Current class index during associative memory comparison
     signal closest_memory_index : unsigned(2 downto 0) := (others => '0');
         -- Stores the closest class index (minimum Hamming distance)
-    signal final_accumulation : STD_LOGIC_VECTOR(D-1 downto 0) := (others => '0');
-        -- Final accumulated bundled result (not always used directly)
     signal done_encoding : STD_LOGIC := '0';
         -- Flag raised when Accelerator finishes encoding one sample
 
@@ -291,7 +289,6 @@ architecture Behavioral of HDC_Controller is
         -- Current AM write address (base + word index)
 
     -- Majority FSM addressing (read/write separation)
-    signal maj_addr_prev : unsigned(13 downto 0) := (others => '0');
     signal chunk_idx     : integer range 0 to CHUNKS_PER_VEC := 0;
         -- Current chunk index during majority accumulation
     signal bit_idx       : integer range 0 to WORD_WIDTH := 0;
@@ -306,13 +303,8 @@ architecture Behavioral of HDC_Controller is
     -- Counter RAM clearing after thresholding
     signal cnt_clear_index : unsigned(13 downto 0) := (others => '0');
         -- Counter RAM clear index (reset for next training cycle)
-    signal clearing_cnt_ram : std_logic := '0';
-        -- Indicates counter RAM is being cleared
-    signal cnt_dout_prev : unsigned(9 downto 0);
-        -- Previous counter RAM output (pipeline)
 
     -- Debug / test counters
-    signal test_cnt      : std_logic_vector(12 downto 0);
     signal signal_counter : unsigned(31 downto 0) := (others => '0');
         -- Global signal counter (monitors processed hypervectors)
     -- ============================================================
@@ -512,9 +504,6 @@ begin
         variable pop : integer := 0;  -- temporary popcount result
         variable shifted_result_var : STD_LOGIC_VECTOR(D-1 downto 0);
             -- stores rotated bundled result
-        variable acc_last_word : std_logic_vector(31 downto 0);
-        variable am_last_word  : std_logic_vector(31 downto 0);
-        variable xor_partial   : std_logic_vector(REMAINDER_BITS-1 downto 0);
         variable acc_segment   : std_logic_vector(SEG_WIDTH-1 downto 0);
         variable xor_temp      : std_logic_vector(SEG_WIDTH - 1 downto 0);
         variable lin_idx_int   : integer; -- linear index for counters
@@ -730,7 +719,7 @@ begin
                 when 6 =>
                     if memory_index = to_unsigned(4, 3) then   -- last class (0..4)
                         -- Bookkeeping: if predicted class = "100" (index 4), increment success counter
-                        if closest_memory_index = "100" then
+                        if closest_memory_index = unsigned(expected_class_index) then
                             similarity_counter <= similarity_counter + 1;
                         end if;
                         compare_state <= 7;   -- proceed to majority accumulation/training

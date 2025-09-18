@@ -133,9 +133,9 @@ begin
     end process;
 
     initialization_process: process
-    file am_file : text open read_mode is "D:/Documents/FAU/MASTERPROJEKT/compare_values.txt";
-    file im_file : text open read_mode is "D:/Documents/FAU/MASTERPROJEKT/position-vectors.txt";
-    file cm_file : text open read_mode is "D:/Documents/FAU/MASTERPROJEKT/value_vectors.txt";
+    file im_file : text open read_mode is "..\..\..\..\position-vectors.txt";
+    file cm_file : text open read_mode is "..\..\..\..\value_vectors.txt";
+
 
     variable text_line : line;
     variable char : character;
@@ -148,39 +148,6 @@ begin
     wait until reset = '0';
     wait for clk_period * 5;
     -- Jetzt beginnt Initialisierung
-    
-    mem_we  <= '0';
-    mem_sel <= "10"; -- AM
-    mem_addr <= (others => '0');
-    mem_data_in <= (others => '0');
-    wait until rising_edge(clk);
-    mem_we <= '1';
-    
-      for i in 0 to 4 loop
-            readline(am_file, text_line);
-            file_char_idx := 0;
-
-            for chunk in 0 to CHUNKS_PER_VEC loop
-                for bit_idx in 31 downto 0 loop
-                    if file_char_idx < text_line'length then
-                        char := text_line(file_char_idx + 1);
-                        case char is
-                            when '0' => segment_bits(bit_idx) := '0';
-                            when '1' => segment_bits(bit_idx) := '1';
-                            when others =>
-                                report "Ungültiges Zeichen '" & char & "' in Zeile " & integer'image(i) severity error;
-                        end case;
-                        file_char_idx := file_char_idx + 1;
-                    else
-                        segment_bits(bit_idx) := '0';
-                    end if;
-                end loop;
-            
-                mem_addr <= std_logic_vector(to_unsigned(i * (CHUNKS_PER_VEC+1) + chunk, 16));
-                mem_data_in <= segment_bits;
-                wait until rising_edge(clk);
-            end loop;
-        end loop;
 
     -- ========== IM (position-vectors) ==========
     wait for clk_period * 5;
@@ -269,7 +236,7 @@ end process;
 
 
     file_read_process: process
-        file feature_file : text open read_mode is "D:/Documents/FAU/MASTERPROJEKT/feature_values.txt";
+        file feature_file : text open read_mode is "..\..\..\..\feature_values.txt";
         variable line_content : line;
         variable features : integer_vector(0 to 31);
         variable temp_value : real;
