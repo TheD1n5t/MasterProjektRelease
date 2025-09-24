@@ -1,0 +1,4 @@
+domain_path: D:\Documents\FAU\HDC_Vitis\hdc_platform\zynqmp_fsbl\zynqmp_fsbl_bsp
+app_src_dir: D:\Vitis\2024.2\data\embeddedsw\lib\sw_apps\zynqmp_fsbl
+template: zynqmp_fsbl
+lang: c

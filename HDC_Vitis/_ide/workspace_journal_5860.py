@@ -1,0 +1,18 @@
+# 2025-06-09T22:06:28.381822900
+import vitis
+
+client = vitis.create_client()
+client.set_workspace(path="HDC_Vitis")
+
+platform = client.get_component(name="hdc_platform")
+status = platform.build()
+
+comp = client.get_component(name="hdc_application")
+comp.build()
+
+vitis.dispose()
+
+vitis.dispose()
+
+vitis.dispose()
+

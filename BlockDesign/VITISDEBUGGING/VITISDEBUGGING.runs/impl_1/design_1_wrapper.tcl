@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.runs/impl_1/design_1_wrapper.tcl"
+  variable script "D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING/VITISDEBUGGING.runs/impl_1/design_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -114,22 +114,22 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.cache/wt [current_project]
-  set_property parent.project_path D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.xpr [current_project]
-  set_property ip_repo_paths D:/Documents/FAU/VITISDEBUGGING [current_project]
+  set_property webtalk.parent_dir D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING/VITISDEBUGGING.cache/wt [current_project]
+  set_property parent.project_path D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING/VITISDEBUGGING.xpr [current_project]
+  set_property ip_repo_paths D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING [current_project]
   update_ip_catalog
-  set_property ip_output_repo D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.cache/ip [current_project]
+  set_property ip_output_repo D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING/VITISDEBUGGING.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING/VITISDEBUGGING.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.srcs/sources_1/bd/design_1/design_1.bd
+  add_files D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING/VITISDEBUGGING.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.srcs/constrs_1/new/ila_core.xdc
+  read_xdc D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING/VITISDEBUGGING.srcs/constrs_1/new/ila_core.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

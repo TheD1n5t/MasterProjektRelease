@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="D:/Documents/FAU/VITISDEBUGGING/VITISDEBUGGING.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="D:/Documents/FAU/MasterProjektRelease/BlockDesign/VITISDEBUGGING/VITISDEBUGGING.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="340b7151b64640738fc43b4ca95db4cb"/>

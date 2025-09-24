@@ -1,0 +1,24 @@
+# 2025-07-20T12:50:33.108022200
+import vitis
+
+client = vitis.create_client()
+client.set_workspace(path="HDC_Vitis")
+
+platform = client.get_component(name="hdc_platform")
+status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../../VITISDEBUGGING/min_hamming.xsa")
+
+status = platform.build()
+
+status = platform.build()
+
+comp = client.get_component(name="hdc_application")
+comp.build()
+
+status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../../VITISDEBUGGING/memoryindex.xsa")
+
+status = platform.build()
+
+status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../../VITISDEBUGGING/final.xsa")
+
+status = platform.build()
+
