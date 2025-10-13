@@ -1,7 +1,0 @@
-Running: xsim.dir/HDC_Controller_tb_behav/xsimk.exe -simmode gui -wdb HDC_Controller_tb_behav.wdb -simrunnum 0 -socket 46470
-Design successfully loaded
-Design Loading Memory Usage: 12964 KB (Peak: 12964 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 22364 KB (Peak: 22364 KB)
-Simulation CPU Usage: 2179296 ms

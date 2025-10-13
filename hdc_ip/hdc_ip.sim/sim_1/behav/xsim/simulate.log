@@ -1,0 +1,8 @@
+Warning: File ..\..\..\..\..\ConfigArrays\feature_values.txt could not be opened
+on HDL file D:/Documents/FAU/MasterProjektRelease/hdc_ip/hdc_ip.srcs/sim_1/new/HDC_Controller_tb.vhd line 239
+Time resolution is 1 ps
+ERROR: File ..\..\..\..\..\ConfigArrays\feature_values.txt is not open. Cannot call endfile on it
+Time: 225615 ns  Iteration: 0  Process: /HDC_Controller_tb/file_read_process
+  File: D:/Documents/FAU/MasterProjektRelease/hdc_ip/hdc_ip.srcs/sim_1/new/HDC_Controller_tb.vhd
+
+HDL Line: D:/Documents/FAU/MasterProjektRelease/hdc_ip/hdc_ip.srcs/sim_1/new/HDC_Controller_tb.vhd:254

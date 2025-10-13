@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../hdc_ip.srcs/sources_1/new/Accelerator.vhd" \
+"../../../../hdc_ip.srcs/sources_1/new/AssociativeMemory.vhd" \
+"../../../../hdc_ip.srcs/sources_1/new/ContinuousMemory.vhd" \
+"../../../../hdc_ip.srcs/sources_1/new/counter_ram.vhd" \
+"../../../../hdc_ip.srcs/sources_1/new/HDC_Controller.vhd" \
+"../../../../hdc_ip.srcs/sources_1/new/IdentityMemory.vhd" \
+"../../../../hdc_ip.srcs/sim_1/new/HDC_Controller_tb.vhd" \
+
+# Do not sort compile order
+nosort
