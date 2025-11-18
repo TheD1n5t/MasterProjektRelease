@@ -24,7 +24,7 @@ architecture Behavioral of HDC_Controller_tb is
             reset : in STD_LOGIC;
             start : in STD_LOGIC;
             done : out STD_LOGIC;
-            feature_value : in STD_LOGIC_VECTOR(15 downto 0);
+            feature_value : in STD_LOGIC_VECTOR(31 downto 0);
             feature_valid : in STD_LOGIC;
             similarity_counter_out : out STD_LOGIC_VECTOR(9 downto 0);
             signal_counter_out : out STD_LOGIC_VECTOR(31 downto 0);
@@ -45,7 +45,7 @@ architecture Behavioral of HDC_Controller_tb is
     signal start : STD_LOGIC := '0';
     signal load_mode : STD_LOGIC := '0';
     signal done : STD_LOGIC;
-    signal feature_value : STD_LOGIC_VECTOR(15 downto 0);
+    signal feature_value : STD_LOGIC_VECTOR(31 downto 0);
     signal feature_valid : STD_LOGIC := '0';
     signal similarity_counter : STD_LOGIC_VECTOR(9 downto 0);
     signal signal_counter_out : STD_LOGIC_VECTOR(31 downto 0);
@@ -133,8 +133,8 @@ begin
     end process;
 
     initialization_process: process
-    file im_file : text open read_mode is "..\..\..\..\..\ConfigArrays\position_vectors.txt";
-    file cm_file : text open read_mode is "..\..\..\..\..\ConfigArrays\value_vectors.txt";
+    file im_file : text open read_mode is "..\..\..\..\position-vectors.txt";
+    file cm_file : text open read_mode is "..\..\..\..\value_vectors.txt";
 
 
     variable text_line : line;
@@ -236,7 +236,7 @@ end process;
 
 
     file_read_process: process
-        file feature_file : text open read_mode is "..\..\..\..\..\ConfigArrays\feature_values.txt";
+        file feature_file : text open read_mode is "..\..\..\..\feature_values.txt";
         variable line_content : line;
         variable features : integer_vector(0 to 31);
         variable temp_value : real;
@@ -256,13 +256,13 @@ end process;
                 readline(feature_file, line_content);
                 read(line_content, temp_value);
                 features(i) := integer(temp_value * 10000.0 + 10000.0);
-                if features(i) >= 55000 then
-                    features(i) := 55000;
+                if features(i) >= 20000 then
+                    features(i) := 20000;
                 end if;
             end loop;
 
             for j in 0 to 31 loop
-                feature_value <= std_logic_vector(to_unsigned(features(j), 16));
+                feature_value <= std_logic_vector(to_unsigned(features(j), 32));
                 feature_valid <= '1';
                 wait until rising_edge(clk);
                 feature_valid <= '0';

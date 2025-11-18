@@ -42,7 +42,7 @@ entity HDC_Controller is
         reset : in STD_LOGIC;
         start : in STD_LOGIC;
         done : out STD_LOGIC;
-        feature_value : in STD_LOGIC_VECTOR(15 downto 0);
+        feature_value : in STD_LOGIC_VECTOR(31 downto 0);
         feature_valid : in STD_LOGIC;
         similarity_counter_out : out STD_LOGIC_VECTOR(9 downto 0);
         signal_counter_out : out STD_LOGIC_VECTOR(31 downto 0);
@@ -140,6 +140,9 @@ architecture Behavioral of HDC_Controller is
     signal TRAINDIVIDER : integer := 173; -- Alias for training divider
     signal threshold_val : integer := DIVIDER / 2; 
         -- Majority threshold for training
+    type confusion_matrix_t is array (0 to 4, 0 to 4) of unsigned(9 downto 0);
+    signal confusion_matrix : confusion_matrix_t := (others => (others => (others => '0')));
+    signal true_class_index : integer range 0 to 4 := 0;
 
     -- ============================================================
     -- Internal memory arrays (RAM-based)
@@ -166,7 +169,7 @@ architecture Behavioral of HDC_Controller is
         -- Index of the current feature being loaded (0..N-1)
     signal features_ready : STD_LOGIC := '0';
         -- Raised when all N features have been loaded into the buffer
-    signal feature_values_packed : STD_LOGIC_VECTOR(N*16-1 downto 0);
+    signal feature_values_packed : STD_LOGIC_VECTOR(N*32-1 downto 0);
         -- Concatenated feature vector (N × 16 bits)
 
     -- Bundled hypervector accumulation
@@ -180,6 +183,8 @@ architecture Behavioral of HDC_Controller is
         -- Current class index during associative memory comparison
     signal closest_memory_index : unsigned(2 downto 0) := (others => '0');
         -- Stores the closest class index (minimum Hamming distance)
+    signal final_accumulation : STD_LOGIC_VECTOR(D-1 downto 0) := (others => '0');
+        -- Final accumulated bundled result (not always used directly)
     signal done_encoding : STD_LOGIC := '0';
         -- Flag raised when Accelerator finishes encoding one sample
 
@@ -289,6 +294,7 @@ architecture Behavioral of HDC_Controller is
         -- Current AM write address (base + word index)
 
     -- Majority FSM addressing (read/write separation)
+    signal maj_addr_prev : unsigned(13 downto 0) := (others => '0');
     signal chunk_idx     : integer range 0 to CHUNKS_PER_VEC := 0;
         -- Current chunk index during majority accumulation
     signal bit_idx       : integer range 0 to WORD_WIDTH := 0;
@@ -303,8 +309,13 @@ architecture Behavioral of HDC_Controller is
     -- Counter RAM clearing after thresholding
     signal cnt_clear_index : unsigned(13 downto 0) := (others => '0');
         -- Counter RAM clear index (reset for next training cycle)
+    signal clearing_cnt_ram : std_logic := '0';
+        -- Indicates counter RAM is being cleared
+    signal cnt_dout_prev : unsigned(9 downto 0);
+        -- Previous counter RAM output (pipeline)
 
     -- Debug / test counters
+    signal test_cnt      : std_logic_vector(12 downto 0);
     signal signal_counter : unsigned(31 downto 0) := (others => '0');
         -- Global signal counter (monitors processed hypervectors)
     -- ============================================================
@@ -325,7 +336,7 @@ architecture Behavioral of HDC_Controller is
         Port (
             clk : in STD_LOGIC;
             reset : in STD_LOGIC;
-            feature_values : in STD_LOGIC_VECTOR(N*16-1 downto 0);
+            feature_values : in STD_LOGIC_VECTOR(N*32-1 downto 0);
                 -- Concatenated feature input values
             start : in STD_LOGIC;
                 -- Start encoding
@@ -504,6 +515,9 @@ begin
         variable pop : integer := 0;  -- temporary popcount result
         variable shifted_result_var : STD_LOGIC_VECTOR(D-1 downto 0);
             -- stores rotated bundled result
+        variable acc_last_word : std_logic_vector(31 downto 0);
+        variable am_last_word  : std_logic_vector(31 downto 0);
+        variable xor_partial   : std_logic_vector(REMAINDER_BITS-1 downto 0);
         variable acc_segment   : std_logic_vector(SEG_WIDTH-1 downto 0);
         variable xor_temp      : std_logic_vector(SEG_WIDTH - 1 downto 0);
         variable lin_idx_int   : integer; -- linear index for counters
@@ -545,7 +559,7 @@ begin
             -- ----------------------------------------------------
             if (compare_state = 0) and feature_valid = '1' and features_ready = '0' then
                 -- Pack feature_value into feature_values_packed
-                feature_values_packed((feature_load_index+1)*16-1 downto feature_load_index*16) 
+                feature_values_packed((feature_load_index+1)*32-1 downto feature_load_index*32) 
                     <= feature_value;
 
                 if feature_load_index = N-1 then
@@ -718,8 +732,10 @@ begin
                 --   - proceed to majority/training state (STATE 7)
                 when 6 =>
                     if memory_index = to_unsigned(4, 3) then   -- last class (0..4)
+                        confusion_matrix(true_class_index, to_integer(unsigned(closest_memory_index))) 
+                        <= confusion_matrix(true_class_index, to_integer(unsigned(closest_memory_index))) + 1;
                         -- Bookkeeping: if predicted class = "100" (index 4), increment success counter
-                        if closest_memory_index = unsigned(expected_class_index) then
+                        if closest_memory_index = "100" then
                             similarity_counter <= similarity_counter + 1;
                         end if;
                         compare_state <= 7;   -- proceed to majority accumulation/training
@@ -854,6 +870,7 @@ begin
                                         -- Completed test set → reset
                                         global_counter <= (others => '0');
                                         compare_state  <= 0;
+                                        true_class_index <= true_class_index + 1;
                                     else
                                         -- Not yet at DIVIDER → process next sample
                                         compare_state  <= 0;

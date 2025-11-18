@@ -29,7 +29,7 @@ entity Accelerator is
         reset : in STD_LOGIC;
 
         -- Feature input: N × 16-bit packed values
-        feature_values : in STD_LOGIC_VECTOR(N*16-1 downto 0);
+        feature_values : in STD_LOGIC_VECTOR(N*32-1 downto 0);
         start : in STD_LOGIC;                 -- Start signal (1-pulse)
         load_mode : in STD_LOGIC;             -- If '1', external memory write/read mode
 
@@ -169,7 +169,7 @@ begin
             else
                 -- Quantize 16-bit feature value into one of M levels
                 level_index := (to_integer(
-                                    unsigned(feature_values((feature_index+1)*16-1 downto feature_index*16))
+                                    unsigned(feature_values((feature_index+1)*32-1 downto feature_index*32))
                                 ) * (M - 1) + 10000) / 20000;
 
                 cm_addr_mux <= std_logic_vector(
